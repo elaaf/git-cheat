@@ -58,6 +58,24 @@ git merge --no-ff FEATURE_BRANCH_NAME
 # To rebase merge FEAT_BRANCH into current branch (Can also use `rebase`).
 git merge --squash FEAT_BRANCH
 ```
+
+
+#### Partial Merge - Merging a few files
+
+```
+# Go to the MASTER branch
+git checkout MASTER
+```
+
+```
+# Bring in the files you want to merge
+git checkout FEATURE <filepath(s)>
+```
+
+```
+# Commit the changes from the new files
+git commit -m "Merge FEATURE branch <filepath(s)>"
+```
   
   
   
